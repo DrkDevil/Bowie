@@ -17,33 +17,42 @@ section { display: table; overflow: hidden; position: relative; height: 100vh; w
 
 /* Background Colors for SVG */
 .colorChange {
-  -webkit-animation: colorChange 30s infinite; 
-	  -moz-animation:colorChange 30s infinite; 
-	      animation: colorChange 30s infinite; 
+  -webkit-animation: colorChange 60s infinite; 
+	  -moz-animation:colorChange 60s infinite; 
+	      animation: colorChange 60s infinite; 
 }
 @keyframes colorChange {
   0%   {fill: #CF9BB9;}
-  50%  {fill: #5959D8;} 
-  100% {fill: #D85959;}
+  25%  {fill: #9B79E0;} 	
+  50%  {fill: #EAA82C;} 
+  75%  {fill: #B25596;} 
+  100% {fill: #CF9BB9;}
 }
 @-webkit-keyframes colorChange {
   0%   {fill: #CF9BB9;}
-  50%  {fill: #5959D8;}
-  100% {fill: #D85959;}
+  25%  {fill: #9B79E0;} 	
+  50%  {fill: #EAA82C;} 
+  75%  {fill: #B25596;} 
+  100% {fill: #CF9BB9;}
 }
 footer.colorChange {
-  -webkit-animation: footerColorChange 30s infinite; 
-	      animation: footerColorChange 30s infinite; 
+  -webkit-animation: colorChange 60s infinite; 
+      -moz-animation:colorChange 60s infinite; 
+          animation: colorChange 60s infinite; 
 }
 @keyframes footerColorChange {
-  0%   {background-color: rgba(119,42,81,0.40);}
-  50%  {background-color: rgba(40,40,159,0.40);} 
-  100% {background-color: rgba(164,59,59,0.40);}
+  0%   {background-color: #9B79E0;}
+  25%  {background-color: #9B79E0;} 	
+  50%  {background-color: #BB4923;}
+  75%  {background-color: #B25596;} 
+  100% {background-color: #CF9BB9;}
 }
 @-webkit-keyframes footerColorChange {
-  0%   {background-color: rgba(119,42,81,0.40);}
-  50%  {background-color: rgba(40,40,159,0.40);} 
-  100% {background-color: rgba(164,59,59,0.40);}
+   0%   {background-color: #9B79E0;}
+  25%  {background-color: #9B79E0;} 	
+  50%  {background-color: #BB4923;}
+  75%  {background-color: #B25596;} 
+  100% {background-color: #CF9BB9;}
 }
 
 /* SVG */
