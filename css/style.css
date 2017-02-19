@@ -12,23 +12,38 @@ table {	border-collapse: collapse; border-spacing: 0;}
 *, *::after, *::before { box-sizing: border-box; }
 html { font-size: 62.5%; }
 body { font-family: "Open Sans", sans-serif; color: #040404; background-color: #ffffff; font-size: 1.6rem; }
-a { color: #2e416a; text-decoration: none; }
+a { color: #fcac7b; text-decoration: none; }
 section { display: table; overflow: hidden; position: relative; height: 100vh; width: 100%; }
 
 /* Background Colors for SVG */
 .colorChange {
-  -webkit-animation: colorchange 120s; 
-	      animation: colorchange 120s; 
+  -webkit-animation: colorChange 30s infinite; 
+	  -moz-animation:colorChange 30s infinite; 
+	      animation: colorChange 30s infinite; 
 }
-@keyframes colorchange {
+@keyframes colorChange {
   0%   {fill: #CF9BB9;}
   50%  {fill: #5959D8;} 
   100% {fill: #D85959;}
 }
-@-webkit-keyframes colorchange {
+@-webkit-keyframes colorChange {
   0%   {fill: #CF9BB9;}
   50%  {fill: #5959D8;}
   100% {fill: #D85959;}
+}
+footer.colorChange {
+  -webkit-animation: footerColorChange 30s infinite; 
+	      animation: footerColorChange 30s infinite; 
+}
+@keyframes footerColorChange {
+  0%   {background-color: rgba(119,42,81,0.40);}
+  50%  {background-color: rgba(40,40,159,0.40);} 
+  100% {background-color: rgba(164,59,59,0.40);}
+}
+@-webkit-keyframes footerColorChange {
+  0%   {background-color: rgba(119,42,81,0.40);}
+  50%  {background-color: rgba(40,40,159,0.40);} 
+  100% {background-color: rgba(164,59,59,0.40);}
 }
 
 /* SVG */
@@ -64,13 +79,10 @@ svg.svgMask { display: none; }
     .videoWrapper::after { content: 'desktop'; }
 }
 
+/* Footer Styles */
+footer { position: absolute; bottom: 0; padding: 15px; z-index: 20000; width: 100%; color: #E3E3E3; font-size: 65%; }
+.extraCredits { float: right; display: inline-block;}
 /* Pace.js Progress Bar */
-.pace {
-  -webkit-pointer-events: none;
-          pointer-events: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
+.pace { -webkit-pointer-events: none; pointer-events: none; -webkit-user-select: none; -moz-user-select: none; user-select: none;}
 .pace-inactive { display: none; }
 .pace .pace-progress { background: #8000ff; position: fixed; z-index: 2000; top: 0; right: 100%; width: 100%; height: 4px; }
