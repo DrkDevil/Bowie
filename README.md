@@ -1,8 +1,22 @@
-Bowie - Full-screen tribute page with transparent SVG Mask with video background.
+###Bowie - Fullscreen Tribute page with Transparent JPG SVG Mask, and Responsive Video Background.
 
-EXTRA CREDITS
+#BUILT BY
 =============
+Brian Orr [DrkDevil](https://github.com/DrkDevil)
 
-Video: [Major-Tom](http://coverr.co/)
- 
-Image: [Pawel Nolbert](https://dribbble.com/shots/2445776-David-Bowie-Ziggy-Stardust)
+
+#VIEW DEMO
+===========
+[LIVE DEMO](htttp://digitalreligion.net/bowie/)
+
+#Based on concepts by
+=====================
+[css-tricks.com](https://css-tricks.com/transparent-jpg-svg/), and [codyhouse.co](https://codyhouse.co/gem/animated-intro-section/)
+
+
+#EXTRA CREDITS
+==============
+
+Background Video: [Major-Tom](http://coverr.co/)
+
+Painted Bowie Bolt JPG: [Pawel Nolbert](https://dribbble.com/shots/2445776-David-Bowie-Ziggy-Stardust)
