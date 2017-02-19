@@ -55,11 +55,11 @@ svg { position: absolute; left: 50%; top: 50%; bottom: auto; right: auto; opacit
        -o-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
 }
-svg.svgMask { display: none; }
+/*svg.svgMask { display: none; }*/
 
 /* Lighting Bolt */
 .lightingWrapper {
-  position: absolute; left: 50%; min-width: 315px; z-index: 3;
+  position: absolute; left: 50%; min-width: 315px; top: calc(50% - 25px); z-index: 3; 
   -webkit-transform: translate(-50%, -50%);
      -moz-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -68,20 +68,25 @@ svg.svgMask { display: none; }
 }
 
 /* Video Player */
-.videoWrapper { position: absolute; z-index: 1; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; background: url(../assets/Major-Tom.jpg) no-repeat center center; background-size: cover; }
-.videoWrapper::after { display: none; content: 'mobile';}
+#video-bg { position: fixed; top: 0; right: 0; bottom: 0; left: 0; overflow: hidden;}
+#video-bg > video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+@media (min-aspect-ratio: 16/9) { #video-bg > video { height: 300%; top: -100%; }}
+@media (max-aspect-ratio: 16/9) { #video-bg > video { width: 300%; left: -100%; }}
+@supports (object-fit: cover) {#video-bg > video { top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }}
 
 /* Responsive Classes */
 @media only screen and (min-width: 768px) {
     svg.svgMask { display: block; }
 	svg.svgMask-mobile { display: none; }
-    .lightingWrapper { top: calc(50% - 25px); }
+    /*.lightingWrapper { top: calc(50% - 25px); }*/
     .videoWrapper::after { content: 'desktop'; }
+	.extraCredits { float: right; display: inline-block;}
 }
 
 /* Footer Styles */
 footer { position: absolute; bottom: 0; padding: 15px; z-index: 20000; width: 100%; color: #E3E3E3; font-size: 65%; }
-.extraCredits { float: right; display: inline-block;}
+.extraCredits { margin-top: 5px;}
+
 /* Pace.js Progress Bar */
 .pace { -webkit-pointer-events: none; pointer-events: none; -webkit-user-select: none; -moz-user-select: none; user-select: none;}
 .pace-inactive { display: none; }
