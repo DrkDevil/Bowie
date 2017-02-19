@@ -1,20 +1,21 @@
 #Bowie - Fullscreen Tribute page with Transparent JPG SVG Mask, and Responsive Video Background.
 
-###BUILT BY
+BUILT BY
 =============
-Brian Orr [DrkDevil](https://github.com/DrkDevil)
+Brian Orr 
+Website: [Digital Religion](https://www.digitalreligion.net)
 
 
-###VIEW DEMO
+VIEW DEMO
 ===========
 [LIVE DEMO](htttp://digitalreligion.net/bowie/)
 
-###Based on concepts by
+Based on concepts by
 =====================
 [css-tricks.com](https://css-tricks.com/transparent-jpg-svg/), and [codyhouse.co](https://codyhouse.co/gem/animated-intro-section/)
 
 
-###EXTRA CREDITS
+EXTRA CREDITS
 ==============
 
 Background Video: [Major-Tom](http://coverr.co/)
