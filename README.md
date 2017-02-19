@@ -9,7 +9,7 @@ Website: [Digital Religion](https://www.digitalreligion.net)
 
 VIEW DEMO
 ===========
-[LIVE DEMO](htttp://digitalreligion.net/bowie/)
+[LIVE DEMO](http://digitalreligion.net/bowie/)
 
 Based on concepts by
 =====================
