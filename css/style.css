@@ -72,7 +72,7 @@ svg { position: absolute; left: 50%; top: 50%; bottom: auto; right: auto; opacit
 #videoBg > video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 @media (min-aspect-ratio: 16/9) { #videoBg > video { height: 300%; top: -100%; }}
 @media (max-aspect-ratio: 16/9) { #videoBg > video { width: 300%; left: -100%; }}
-@supports (object-fit: cover) {#videoBg > video { top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }}
+/* @supports (object-fit: cover) {#videoBg > video { top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }}*/
 
 /* Responsive Classes */
 @media only screen and (min-width: 768px) {
@@ -80,13 +80,14 @@ svg { position: absolute; left: 50%; top: 50%; bottom: auto; right: auto; opacit
 	svg.svgMask-mobile { display: none; }
     /*.lightingWrapper { top: calc(50% - 25px); }*/
     .videoWrapper::after { content: 'desktop'; }
-	.extraCredits { float: right; display: inline-block;}
+	.extraCredits { float: right; display: inline-block; margin: 0;}
 }
 
 /* Footer Styles */
 footer { position: absolute; bottom: 0; padding: 15px; z-index: 20000; width: 100%; color: #E3E3E3; font-size: 65%; }
+@media only screen and (max-width: 768px) {
 .extraCredits { margin-top: 5px;}
-
+}
 /* Pace.js Progress Bar */
 .pace { -webkit-pointer-events: none; pointer-events: none; -webkit-user-select: none; -moz-user-select: none; user-select: none;}
 .pace-inactive { display: none; }
