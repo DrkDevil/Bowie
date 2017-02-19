@@ -12,47 +12,49 @@ table {	border-collapse: collapse; border-spacing: 0;}
 *, *::after, *::before { box-sizing: border-box; }
 html { font-size: 62.5%; }
 body { font-family: "Open Sans", sans-serif; color: #040404; background-color: #ffffff; font-size: 1.6rem; }
-a { color: #fcac7b; text-decoration: none; }
+a { text-decoration: none; color: 000;}
 section { display: table; overflow: hidden; position: relative; height: 100vh; width: 100%; }
 
 /* Background Colors for SVG */
 .colorChange {
-  -webkit-animation: colorChange 60s infinite; 
-	  -moz-animation:colorChange 60s infinite; 
-	      animation: colorChange 60s infinite; 
+  opacity: .75;
+  -webkit-animation: colorChange 30s infinite; 
+	  -moz-animation:colorChange 30s infinite; 
+	      animation: colorChange 30s infinite; 
 }
 @keyframes colorChange {
-  0%   {fill: #CF9BB9;}
-  25%  {fill: #9B79E0;} 	
-  50%  {fill: #EAA82C;} 
-  75%  {fill: #B25596;} 
-  100% {fill: #CF9BB9;}
+  0%   {fill: #FF9547;}
+  25%  {fill: #E86741;} 	
+  50%  {fill: #FF5A54;} 
+  75%  {fill: #E8419C;} 
+  100% {fill: #E941FF;}
 }
 @-webkit-keyframes colorChange {
-  0%   {fill: #CF9BB9;}
-  25%  {fill: #9B79E0;} 	
-  50%  {fill: #EAA82C;} 
-  75%  {fill: #B25596;} 
-  100% {fill: #CF9BB9;}
+  0%   {fill: #FF9547;}
+  25%  {fill: #E86741;} 	
+  50%  {fill: #FF5A54;} 
+  75%  {fill: #E8419C;} 
+  100% {fill: #E941FF;}
 }
 footer.colorChange {
-  -webkit-animation: colorChange 60s infinite; 
-      -moz-animation:colorChange 60s infinite; 
-          animation: colorChange 60s infinite; 
+  opacity: .65;
+  -webkit-animation: footerColorChange 30s infinite; 
+     -moz-animation: footerColorChange 30s infinite; 
+          animation: footerColorChange 30s infinite; 
 }
 @keyframes footerColorChange {
-  0%   {background-color: #9B79E0;}
-  25%  {background-color: #9B79E0;} 	
-  50%  {background-color: #BB4923;}
-  75%  {background-color: #B25596;} 
-  100% {background-color: #CF9BB9;}
+  0%   {background-color: #FF9547;}
+  25%  {background-color: #E86741;} 	
+  50%  {background-color: #FF5A54;} 
+  75%  {background-color: #E8419C;} 
+  100% {background-color: #E941FF;}
 }
 @-webkit-keyframes footerColorChange {
-   0%   {background-color: #9B79E0;}
-  25%  {background-color: #9B79E0;} 	
-  50%  {background-color: #BB4923;}
-  75%  {background-color: #B25596;} 
-  100% {background-color: #CF9BB9;}
+  0%   {background-color: #FF9547;}
+  25%  {background-color: #E86741;} 	
+  50%  {background-color: #FF5A54;} 
+  75%  {background-color: #E8419C;} 
+  100% {background-color: #E941FF;}
 }
 
 /* SVG */
@@ -68,20 +70,21 @@ svg { position: absolute; left: 50%; top: 50%; bottom: auto; right: auto; opacit
 
 /* Lighting Bolt */
 .lightingWrapper {
-  position: absolute; left: 50%; min-width: 315px; top: calc(50% - 25px); z-index: 3; 
-  -webkit-transform: translate(-50%, -50%);
-     -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-       -o-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  position: absolute; left: 50%; min-width: 290px; top: calc(50% - 32px); z-index: 30000; 
+  -webkit-transform: translate(-78%, -50%);
+     -moz-transform: translate(-78%, -50%);
+      -ms-transform: translate(-78%, -50%);
+       -o-transform: translate(-78%, -50%);
+          transform: translate(-78%, -50%);
 }
+.lightingWrapper svg {opacity: 1;}
 
 /* Video Player */
 #videoBg { position: fixed; top: 0; right: 0; bottom: 0; left: 0; overflow: hidden;}
 #videoBg > video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 @media (min-aspect-ratio: 16/9) { #videoBg > video { height: 300%; top: -100%; }}
 @media (max-aspect-ratio: 16/9) { #videoBg > video { width: 300%; left: -100%; }}
-/* @supports (object-fit: cover) {#videoBg > video { top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }}*/
+@supports (object-fit: cover) {#videoBg > video { top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }}
 
 /* Responsive Classes */
 @media only screen and (min-width: 768px) {
